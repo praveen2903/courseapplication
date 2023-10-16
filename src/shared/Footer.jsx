@@ -4,10 +4,11 @@ import facebook from '../assets/facebook.png'
 import twitter from '../assets/twitter.png'
 import linkedin from '../assets/linkedin.png'
 import instagram from '../assets/instagram.png'
+import git from "../assets/git.png"
 
 const Footer = () => {
   return (
-    <div className='bg-[#1e3a8a] text-white md:px-12 p-4 max-w-screen-2xl mx-auto rounded-lg'>
+    <div className='bg-gradient-to-r from-[#6366f1] to-[#312e81] text-white md:px-12 p-4 max-w-screen-3xl rounded-lg mx-6'>
         <div className='my-12 flex flex-col md:flex-row gap-10'>
             <div className='md:w-1/2 space-y-6'>
                 <a href='/' className='text-2xl font-semibold flex items-center space-x-3 text-primary'>
@@ -55,10 +56,22 @@ const Footer = () => {
         <div className='flex flex-col sm:flex-row gap-8 sm:items-center justify-between my-8'>
             <p>@ XYZ 20XX --- 20XX. All rights reserved.</p>
             <div className='flex items-center space-x-4'>
-                <img src={facebook} alt="" className='w-8 cursor-pointer hover:-translate-y-4 transition-all duration-500'/>
-                <img src={instagram} alt="" className='w-8 cursor-pointer hover:-translate-y-4 transition-all duration-500' />
-                <img src={twitter} alt="" className='w-8 cursor-pointer hover:-translate-y-4 transition-all duration-500' />
-                <img src={linkedin} alt='' className='w-8 cursor-pointer hover:-translate-y-4 transition-all duration-500'/>
+                <a href='https://www.facebook.com/rokkam.saipraveen.3/'>
+                    <img src={facebook} alt="" className='w-8 cursor-pointer hover:-translate-y-4 transition-all duration-500'/>
+                </a>
+                <a href='https://www.instagram.com/rokkam_praveen/'>
+                    <img src={instagram} alt="" className='w-8 cursor-pointer hover:-translate-y-4 transition-all duration-500' />
+                </a>
+                <a href='https://twitter.com/SaiPraveen2903'>
+                    <img src={twitter} alt="" className='w-8 cursor-pointer hover:-translate-y-4 transition-all duration-500' />                
+                </a>
+                <a href='https://www.linkedin.com/in/rokkam-sai-praveen-83043b237/'>
+                    <img src={linkedin} alt='' className='w-8 cursor-pointer hover:-translate-y-4 transition-all duration-500'/>
+                </a>
+                <a href='https://github.com/praveen2903'>
+                    <img src={git} alt='' className='cursor-pointer hover:-translate-y-4 transition-all duration-500 w-24'/>
+                </a>
+                
             </div>
         </div>
     </div>

@@ -39,10 +39,10 @@ const Pricing = () => {
             </div>
         </div>
 
-        <motion.div variants={fadeIn("up",0.2)} initial="hidden" whileInView={"show"} viewport={{once:false,amount:0.5}} className='grid sm:grid-cols-2 md:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto'>
             {
                 packages.map((pkg,index)=>
-                <div key={index} className='border py-10 md:px-6 px-4 rounded-lg shadow-3xl'>
+                <motion.div variants={fadeIn("up",0.2)} initial="hidden" whileInView={"show"} viewport={{once:false,amount:0.5}} key={index} className='border py-10 md:px-6 px-4 rounded-lg shadow-3xl'>
                     <h3 className='text-3xl font-bold text-center text-primary'>{pkg.name}</h3>
                     <p className='text-third text-center my-5'>{pkg.description}</p>
                     <p className='mt-5 text-center text-secondary text-4xl font-bold'>
@@ -59,11 +59,11 @@ const Pricing = () => {
                     <div className='w-full mx-auto mt-8 flex items-center justify-center'>
                         <button className='py-3 px-8 bg-secondary font-semibold text-white rounded-2xl hover:bg-primary transition-all duration-300'>Get Started</button>
                     </div>
-                </div>
+                </motion.div>
 
                 )
             }
-        </motion.div>
+        </div>
     </div>
   )
 }

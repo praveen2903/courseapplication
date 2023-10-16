@@ -38,7 +38,7 @@ function NavBar() {
 
   return (
     <div>
-        <nav className='bg-white m-2 rounded-3xl border-b md:bg-[#38bdf8] md:px-14 max-w-screen-2xl mx-auto fixed top-0 right-0 left-0'>
+        <nav className=' m-2 rounded-3xl border-b bg-gradient-to-r from-[#bae6fd] to-[#60a5fa] md:px-14 max-w-screen-2xl mx-auto fixed top-0 right-0 left-0'>
             <div className='text-lg container mx-auto flex justify-between items-center p-1'>
                 <div className='flex space-x-14  items-center'>
                     <a href='/' className='text-xl md:text-2xl font-semibold flex items-center space-x-3 text-primary'>
@@ -76,13 +76,15 @@ function NavBar() {
 
                 </div>
             </div>
-            <div className={`space-y-4 px-8 pt-2 pb-5 cursor-pointer bg-secondary ${isMenuOpen ? "block fixed top-16 right-0 left-0" : "hidden"}`}>
-                {
-                    navItems.map(({link,path})=>
-                        <Link activeClass='active' spy={true} smooth={true} offset={-80} key={link} to={path} onClick={toggleMenu} className='block text-white md:hidden hover:text-gray-300'>{link}</Link>
-                    )
-                }
+            <div className='fixed md:hidden'>
+                <div className={`space-y-4 px-8 pt-2 pb-5 cursor-pointer bg-secondary ${isMenuOpen ? "block fixed top-16 right-0 left-0" : "hidden"}`}>
+                    {
+                        navItems.map(({link,path})=>
+                            <Link activeClass='active' spy={true} smooth={true} offset={-80} key={link} to={path} onClick={toggleMenu} className='block text-white md:hidden hover:text-gray-300'>{link}</Link>
+                        )
+                    }
 
+                </div>
             </div>
         </nav>
         
