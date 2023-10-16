@@ -42,7 +42,7 @@ function NavBar() {
             <div className='text-lg container mx-auto flex justify-between items-center p-1'>
                 <div className='flex space-x-14  items-center'>
                     <a href='/' className='text-xl md:text-2xl font-semibold flex items-center space-x-3 text-primary'>
-                        <img src={logo} alt='logo' className='w-10 inline-block items-center'/>
+                        <img src={logo} alt='logo' className='w-16 inline-block items-center'/>
                         <span className='text-[#1d4ed8]'>SMART<span className='text-[#fbbf24]'>study</span></span>
                     </a>
                     <ul className='md:flex space-x-12 text-white hidden cursor-pointer'>

@@ -7,11 +7,11 @@ import instagram from '../assets/instagram.png'
 
 const Footer = () => {
   return (
-    <div className='bg-[#1e3a8a] text-white md:px-12 p-4 max-w-screen-3xl mx-auto rounded-lg'>
+    <div className='bg-[#1e3a8a] text-white md:px-12 p-4 max-w-screen-2xl mx-auto rounded-lg'>
         <div className='my-12 flex flex-col md:flex-row gap-10'>
             <div className='md:w-1/2 space-y-6'>
                 <a href='/' className='text-2xl font-semibold flex items-center space-x-3 text-primary'>
-                    <img src={logo} alt='/' className='w-10 inline-block items-center' />
+                    <img src={logo} alt='/' className='w-16 inline-block items-center' />
                     <span className='text-white'>SMARTstudy</span>
                 </a>
                 <p className='md:w-1/2'>A simple paragraph is comprised of three major components. The first sentence, which is often a declarative sentence.</p>
